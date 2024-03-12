@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- File RoadTrafficAccidentCatalogs_V2.xml 2018-12-01 (https://models.geo.admin.ch/ASTRA/) -->
+<TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+  <HEADERSECTION VERSION="2.3" SENDER="ASTRA">
+    <MODELS>
+      <MODEL VERSION="2012-02-20" NAME="Units" URI="http://www.interlis.ch/models"/>
+      <MODEL VERSION="2015-11-24" NAME="CoordSys" URI="http://www.interlis.ch/models"/>
+      <MODEL VERSION="2011-08-30" NAME="CatalogueObjects_V1" URI="http://www.geo.admin.ch"/>
+      <MODEL VERSION="2011-08-30" NAME="LocalisationCH_V1" URI="http://www.geo.admin.ch"/>
+      <MODEL VERSION="2018-02-19" NAME="CHAdminCodes_V1" URI="http://www.geo.admin.ch"/>
+      <MODEL VERSION="2017-12-04" NAME="GeometryCHLV95_V1" URI="http://www.geo.admin.ch"/>
+      <MODEL VERSION="2018-12-01" NAME="RoadTrafficAccidentLocation_V2" URI="https://models.geo.admin.ch/ASTRA/"/>      
+    </MODELS>
+  </HEADERSECTION>
+  <DATASECTION>
+    <RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs BID="b01">
+      <RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.RoadType TID="rt430">
+        <Code>rt430</Code>
+        <Text>
+          <LocalisationCH_V1.MultilingualText>
+            <LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>de</Language>
+                <Text>Autobahn</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>fr</Language>
+                <Text>Autoroute</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>it</Language>
+                <Text>Autostrada</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>en</Language>
+                <Text>Motorway</Text>
+              </LocalisationCH_V1.LocalisedText>
+            </LocalisedText>
+          </LocalisationCH_V1.MultilingualText>
+        </Text>
+      </RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.RoadType>
+      <RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.RoadType TID="rt431">
+        <Code>rt431</Code>
+        <Text>
+          <LocalisationCH_V1.MultilingualText>
+            <LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>de</Language>
+                <Text>Autostrasse</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>fr</Language>
+                <Text>Semi-autoroute</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>it</Language>
+                <Text>Semiautostrada</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>en</Language>
+                <Text>Expressway</Text>
+              </LocalisationCH_V1.LocalisedText>
+            </LocalisedText>
+          </LocalisationCH_V1.MultilingualText>
+        </Text>
+      </RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.RoadType>
+      <RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.RoadType TID="rt432">
+        <Code>rt432</Code>
+        <Text>
+          <LocalisationCH_V1.MultilingualText>
+            <LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>de</Language>
+                <Text>Hauptstrasse</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>fr</Language>
+                <Text>Route principale</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>it</Language>
+                <Text>Strada principale</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>en</Language>
+                <Text>Principal road</Text>
+              </LocalisationCH_V1.LocalisedText>
+            </LocalisedText>
+          </LocalisationCH_V1.MultilingualText>
+        </Text>
+      </RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.RoadType>
+      <RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.RoadType TID="rt433">
+        <Code>rt433</Code>
+        <Text>
+          <LocalisationCH_V1.MultilingualText>
+            <LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>de</Language>
+                <Text>Nebenstrasse</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>fr</Language>
+                <Text>Route secondaire</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>it</Language>
+                <Text>Strada secondaria</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>en</Language>
+                <Text>Minor road</Text>
+              </LocalisationCH_V1.LocalisedText>
+            </LocalisedText>
+          </LocalisationCH_V1.MultilingualText>
+        </Text>
+      </RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.RoadType>
+      <RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.RoadType TID="rt434">
+        <Code>rt434</Code>
+        <Text>
+          <LocalisationCH_V1.MultilingualText>
+            <LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>de</Language>
+                <Text>Autobahnnebenanlage</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>fr</Language>
+                <Text>Installation annexe sur autoroute</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>it</Language>
+                <Text>Impianto accessorio all'autostrada</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>en</Language>
+                <Text>Motorway side installation</Text>
+              </LocalisationCH_V1.LocalisedText>
+            </LocalisedText>
+          </LocalisationCH_V1.MultilingualText>
+        </Text>
+      </RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.RoadType>
+      <RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.RoadType TID="rt439">
+        <Code>rt439</Code>
+        <Text>
+          <LocalisationCH_V1.MultilingualText>
+            <LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>de</Language>
+                <Text>Andere</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>fr</Language>
+                <Text>Autre</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>it</Language>
+                <Text>Altro</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>en</Language>
+                <Text>Other</Text>
+              </LocalisationCH_V1.LocalisedText>
+            </LocalisedText>
+          </LocalisationCH_V1.MultilingualText>
+        </Text>
+      </RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.RoadType>
+
+      <RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentType TID="at0">
+        <Code>at0</Code>
+        <Text>
+          <LocalisationCH_V1.MultilingualText>
+            <LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>de</Language>
+                <Text>Schleuder- oder Selbstunfall</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>fr</Language>
+                <Text>Dérapage ou perte de maîtrise</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>it</Language>
+                <Text>Incidente di sbandamento o per colpa propria</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>en</Language>
+                <Text>Accident with skidding or self-accident</Text>
+              </LocalisationCH_V1.LocalisedText>
+            </LocalisedText>
+          </LocalisationCH_V1.MultilingualText>
+        </Text>
+      </RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentType>
+      <RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentType TID="at1">
+        <Code>at1</Code>
+        <Text>
+          <LocalisationCH_V1.MultilingualText>
+            <LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>de</Language>
+                <Text>Überholunfall oder Fahrstreifenwechsel</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>fr</Language>
+                <Text>Accident lors d'un dépassement ou lors d'un changement de voie de circulation</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>it</Language>
+                <Text>Incidente di sorpasso o al cambiamento di corsia</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>en</Language>
+                <Text>Accident when overtaking or changing lanes</Text>
+              </LocalisationCH_V1.LocalisedText>
+            </LocalisedText>
+          </LocalisationCH_V1.MultilingualText>
+        </Text>
+      </RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentType>
+      <RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentType TID="at2">
+        <Code>at2</Code>
+        <Text>
+          <LocalisationCH_V1.MultilingualText>
+            <LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>de</Language>
+                <Text>Auffahrunfall</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>fr</Language>
+                <Text>Accident par tamponnement</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>it</Language>
+                <Text>Incidente di tamponamento</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>en</Language>
+                <Text>Accident with rear-end collision</Text>
+              </LocalisationCH_V1.LocalisedText>
+            </LocalisedText>
+          </LocalisationCH_V1.MultilingualText>
+        </Text>
+      </RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentType>
+      <RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentType TID="at3">
+        <Code>at3</Code>
+        <Text>
+          <LocalisationCH_V1.MultilingualText>
+            <LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>de</Language>
+                <Text>Abbiegeunfall</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>fr</Language>
+                <Text>Accident en quittant une route</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>it</Language>
+                <Text>Incidente nello svoltare</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>en</Language>
+                <Text>Accident when turning left or right</Text>
+              </LocalisationCH_V1.LocalisedText>
+            </LocalisedText>
+          </LocalisationCH_V1.MultilingualText>
+        </Text>
+      </RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentType>
+      <RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentType TID="at4">
+        <Code>at4</Code>
+        <Text>
+          <LocalisationCH_V1.MultilingualText>
+            <LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>de</Language>
+                <Text>Einbiegeunfall</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>fr</Language>
+                <Text>Accident en s'engageant sur une route</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>it</Language>
+                <Text>Incidente nell'immettersi in una strada</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>en</Language>
+                <Text>Accident when turning-into main road</Text>
+              </LocalisationCH_V1.LocalisedText>
+            </LocalisedText>
+          </LocalisationCH_V1.MultilingualText>
+        </Text>
+      </RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentType>
+      <RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentType TID="at5">
+        <Code>at5</Code>
+        <Text>
+          <LocalisationCH_V1.MultilingualText>
+            <LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>de</Language>
+                <Text>Überqueren der Fahrbahn</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>fr</Language>
+                <Text>Accident en traversant une route</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>it</Language>
+                <Text>Incidente nell'attraversare la carreggiata</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>en</Language>
+                <Text>Accident when crossing the lane(s)</Text>
+              </LocalisationCH_V1.LocalisedText>
+            </LocalisedText>
+          </LocalisationCH_V1.MultilingualText>
+        </Text>
+      </RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentType>
+      <RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentType TID="at6">
+        <Code>at6</Code>
+        <Text>
+          <LocalisationCH_V1.MultilingualText>
+            <LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>de</Language>
+                <Text>Frontalkollision</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>fr</Language>
+                <Text>Collision frontale</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>it</Language>
+                <Text>Collisione frontale</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>en</Language>
+                <Text>Accident with head-on collision</Text>
+              </LocalisationCH_V1.LocalisedText>
+            </LocalisedText>
+          </LocalisationCH_V1.MultilingualText>
+        </Text>
+      </RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentType>
+      <RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentType TID="at7">
+        <Code>at7</Code>
+        <Text>
+          <LocalisationCH_V1.MultilingualText>
+            <LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>de</Language>
+                <Text>Parkierunfall</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>fr</Language>
+                <Text>Accident en parquant</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>it</Language>
+                <Text>Incidente nel parcheggiare</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>en</Language>
+                <Text>Accident when parking</Text>
+              </LocalisationCH_V1.LocalisedText>
+            </LocalisedText>
+          </LocalisationCH_V1.MultilingualText>
+        </Text>
+      </RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentType>
+      <RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentType TID="at8">
+        <Code>at8</Code>
+        <Text>
+          <LocalisationCH_V1.MultilingualText>
+            <LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>de</Language>
+                <Text>Fussgängerunfall</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>fr</Language>
+                <Text>Accident impliquant des piétons</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>it</Language>
+                <Text>Incidente con pedoni</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>en</Language>
+                <Text>Accident involving pedestrian(s)</Text>
+              </LocalisationCH_V1.LocalisedText>
+            </LocalisedText>
+          </LocalisationCH_V1.MultilingualText>
+        </Text>
+      </RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentType>
+      <RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentType TID="at9">
+        <Code>at9</Code>
+        <Text>
+          <LocalisationCH_V1.MultilingualText>
+            <LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>de</Language>
+                <Text>Tierunfall</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>fr</Language>
+                <Text>Accident impliquant des animaux</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>it</Language>
+                <Text>Incidente con animali</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>en</Language>
+                <Text>Accident involving animal(s)</Text>
+              </LocalisationCH_V1.LocalisedText>
+            </LocalisedText>
+          </LocalisationCH_V1.MultilingualText>
+        </Text>
+      </RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentType>
+      <RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentType TID="at00">
+        <Code>at00</Code>
+        <Text>
+          <LocalisationCH_V1.MultilingualText>
+            <LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>de</Language>
+                <Text>Andere</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>fr</Language>
+                <Text>Autres</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>it</Language>
+                <Text>Altri</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>en</Language>
+                <Text>Other</Text>
+              </LocalisationCH_V1.LocalisedText>
+            </LocalisedText>
+          </LocalisationCH_V1.MultilingualText>
+        </Text>
+      </RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentType>
+
+      <RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentSeverityCategory TID="as1">
+        <Code>as1</Code>
+        <Text>
+          <LocalisationCH_V1.MultilingualText>
+            <LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>de</Language>
+                <Text>Unfall mit Getöteten</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>fr</Language>
+                <Text>Accident avec tués</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>it</Language>
+                <Text>Incidente con persone decedute</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>en</Language>
+                <Text>Accident with fatalities</Text>
+              </LocalisationCH_V1.LocalisedText>
+            </LocalisedText>
+          </LocalisationCH_V1.MultilingualText>
+        </Text>
+      </RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentSeverityCategory>
+      <RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentSeverityCategory TID="as2">
+        <Code>as2</Code>
+        <Text>
+          <LocalisationCH_V1.MultilingualText>
+            <LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>de</Language>
+                <Text>Unfall mit Schwerverletzten</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>fr</Language>
+                <Text>Accident avec blessés graves</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>it</Language>
+                <Text>Incidente con feriti gravi</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>en</Language>
+                <Text>Accident with severe injuries</Text>
+              </LocalisationCH_V1.LocalisedText>
+            </LocalisedText>
+          </LocalisationCH_V1.MultilingualText>
+        </Text>
+      </RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentSeverityCategory>
+      <RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentSeverityCategory TID="as3">
+        <Code>as3</Code>
+        <Text>
+          <LocalisationCH_V1.MultilingualText>
+            <LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>de</Language>
+                <Text>Unfall mit Leichtverletzten</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>fr</Language>
+                <Text>Accident avec blessés légers</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>it</Language>
+                <Text>Incidente con feriti leggeri</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>en</Language>
+                <Text>Accident with light injuries</Text>
+              </LocalisationCH_V1.LocalisedText>
+            </LocalisedText>
+          </LocalisationCH_V1.MultilingualText>
+        </Text>
+      </RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentSeverityCategory>
+      <RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentSeverityCategory TID="as4">
+        <Code>as4</Code>
+        <Text>
+          <LocalisationCH_V1.MultilingualText>
+            <LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>de</Language>
+                <Text>Unfall mit Sachschaden</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>fr</Language>
+                <Text>Accident avec dommages matériels</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>it</Language>
+                <Text>Incidente con danni materiali</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>en</Language>
+                <Text>Accident with property damage</Text>
+              </LocalisationCH_V1.LocalisedText>
+            </LocalisedText>
+          </LocalisationCH_V1.MultilingualText>
+        </Text>
+      </RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentSeverityCategory>
+
+      <RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentWeekDay TID="aw401">
+        <Code>aw401</Code>
+        <Text>
+          <LocalisationCH_V1.MultilingualText>
+            <LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>de</Language>
+                <Text>Montag</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>fr</Language>
+                <Text>Lundi</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>it</Language>
+                <Text>Lunedì</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>en</Language>
+                <Text>Monday</Text>
+              </LocalisationCH_V1.LocalisedText>
+            </LocalisedText>
+          </LocalisationCH_V1.MultilingualText>
+        </Text>
+      </RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentWeekDay>
+      <RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentWeekDay TID="aw402">
+        <Code>aw402</Code>
+        <Text>
+          <LocalisationCH_V1.MultilingualText>
+            <LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>de</Language>
+                <Text>Dienstag</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>fr</Language>
+                <Text>Mardi</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>it</Language>
+                <Text>Martedì</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>en</Language>
+                <Text>Tuesday</Text>
+              </LocalisationCH_V1.LocalisedText>
+            </LocalisedText>
+          </LocalisationCH_V1.MultilingualText>
+        </Text>
+      </RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentWeekDay>
+      <RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentWeekDay TID="aw403">
+        <Code>aw403</Code>
+        <Text>
+          <LocalisationCH_V1.MultilingualText>
+            <LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>de</Language>
+                <Text>Mittwoch</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>fr</Language>
+                <Text>Mercredi</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>it</Language>
+                <Text>Mercoledì</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>en</Language>
+                <Text>Wednesday</Text>
+              </LocalisationCH_V1.LocalisedText>
+            </LocalisedText>
+          </LocalisationCH_V1.MultilingualText>
+        </Text>
+      </RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentWeekDay>
+      <RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentWeekDay TID="aw404">
+        <Code>aw404</Code>
+        <Text>
+          <LocalisationCH_V1.MultilingualText>
+            <LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>de</Language>
+                <Text>Donnerstag</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>fr</Language>
+                <Text>Jeudi</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>it</Language>
+                <Text>Giovedì</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>en</Language>
+                <Text>Thursday</Text>
+              </LocalisationCH_V1.LocalisedText>
+            </LocalisedText>
+          </LocalisationCH_V1.MultilingualText>
+        </Text>
+      </RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentWeekDay>
+      <RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentWeekDay TID="aw405">
+        <Code>aw405</Code>
+        <Text>
+          <LocalisationCH_V1.MultilingualText>
+            <LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>de</Language>
+                <Text>Freitag</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>fr</Language>
+                <Text>Vendredi</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>it</Language>
+                <Text>Venerdì</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>en</Language>
+                <Text>Friday</Text>
+              </LocalisationCH_V1.LocalisedText>
+            </LocalisedText>
+          </LocalisationCH_V1.MultilingualText>
+        </Text>
+      </RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentWeekDay>
+      <RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentWeekDay TID="aw406">
+        <Code>aw406</Code>
+        <Text>
+          <LocalisationCH_V1.MultilingualText>
+            <LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>de</Language>
+                <Text>Samstag</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>fr</Language>
+                <Text>Samedi</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>it</Language>
+                <Text>Sabato</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>en</Language>
+                <Text>Saturday</Text>
+              </LocalisationCH_V1.LocalisedText>
+            </LocalisedText>
+          </LocalisationCH_V1.MultilingualText>
+        </Text>
+      </RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentWeekDay>
+      <RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentWeekDay TID="aw407">
+        <Code>aw407</Code>
+        <Text>
+          <LocalisationCH_V1.MultilingualText>
+            <LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>de</Language>
+                <Text>Sonntag</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>fr</Language>
+                <Text>Dimanche</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>it</Language>
+                <Text>Domenica</Text>
+              </LocalisationCH_V1.LocalisedText>
+              <LocalisationCH_V1.LocalisedText>
+                <Language>en</Language>
+                <Text>Sunday</Text>
+              </LocalisationCH_V1.LocalisedText>
+            </LocalisedText>
+          </LocalisationCH_V1.MultilingualText>
+        </Text>
+      </RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentWeekDay>
+
+    </RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs>
+  </DATASECTION>
+</TRANSFER>

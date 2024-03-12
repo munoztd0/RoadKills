@@ -1,0 +1,31 @@
+Dernière modification: nouvelles données (année 2022)
+Etat de la banque de données: 10.03.2023
+Référence spatiale: Suisse
+Période de l'enquête: année civile
+Enquête: Accidents de la circulation routière (SVU)
+Source des données: Office fédéral des routes (OFROU), 3003 Berne /Suisse
+Objets impliqués:
+Le présent cube de données affiche le nombre d' 'objets' (moyens de transport ou piétons) impliqués dans des accidents avec dommages corporels. Dans un accident, peuvent être impliqués plusieurs objets (par exemple collision entre un piéton et une voiture de tourisme) ou un seul (par exemple lors d' une perte de maîtrise).
+Accident avec dommages corporels
+Sont considérés tous les accidents enregistrés par la police ayant fait des blessés ou des morts qui surviennent sur la voie publique et dans lesquels est impliqué au moins un véhicule ou un engin assimilé à un véhicule (skateboard, trottinette, etc.). Les actes intentionnels (p. ex. intention de suicide ou de tuer) de toutes les personnes impliquées sont exclus.
+Genre D'objet (Genre D'usager)
+Piéton
+Jusqu'en 2010, cette catégorie englobe également les engins assimilés à un véhicule (EAV). À partir de 2011, ceux-ci sont comptabilisés séparément.
+Vélo électrique rapide
+Les 'vélos électriques rapides' sont des véhicules d' une vitesse maximale par construction de 30 km/h et d' une puissance maximale de 1,0 kW, dont l' assistance au pédalage est limitée à 45 km/h. Ils nécessitent une plaque d' immatriculation. Les vélos électriques ne sont comptabilisés comme catégorie séparée qu'à partir de 2011. Auparavant, ils faisaient partie de la catégorie 'Cycle'.
+Vélo électrique lent
+Les 'vélos électriques lents' sont des véhicules d' une vitesse maximale par construction de 20 km/h et d' une puissance maximale de 0,5 kW, dont l' assistance au pédalage est limitée à 25 km/h. Ils ne nécessitent pas de plaque d' immatriculation. Les vélos électriques ne sont comptabilisés comme catégorie séparée qu'à partir de 2011. Auparavant, ils faisaient partie de la catégorie 'Cycle'.
+Cycle
+Jusqu'en 2010, cette catégorie englobe également les vélos électriques.
+Engin assimilé à un véhicule (EAV)
+Moyen de locomotion à roues ou à roulettes mû par la seule force musculaire de son utilisateur, tel que les patins à roulettes, rollers, trottinettes ou vélos d' enfants. Les cycles et les fauteuils roulants ne sont pas considérés comme des engins assimilés à des véhicules. Les engins assimilés à un véhicule ne sont comptabilisés comme catégorie séparée qu'à partir de 2011. Jusqu'en 2010, ils faisaient partie de la catégorie 'Piéton'.
+Responsabilité Présumée De L'objet
+Avec implication causale
+Les indications relatives à la responsabilité présumée de l'objet n'ont pas de valeur légale. Elles servent à analyser les accidents. L'agent de police effectuant le rapport indique les causes selon son estimation personnelle. Il peut indiquer plusieures causes présumées par accident et également par objet impliqué. Voir le 'Procès-verbal d'accident'.
+Gravité De L'accident
+Accident avec tués
+Les personnes tuées sont celles qui décèdent des suites de l'accident, sur place ou dans les 30 jours. Les suicides ne sont pas pris en compte dans la statistique des accidents.
+Accident avec blessés graves
+On entend par 'accident avec blessés graves' les accidents où l'on déplore des blessés graves mais pas de personnes tuées. Sont comptés parmi les 'blessés graves', depuis 2015, des personnes ayant des lésions graves et visibles nécessitant une prise en charge médicale stationnaire. Jusqu' en 2014, on comptait les personnes souffrant de troubles importants les empêchant d'avoir une activité normale pendant au moins 24 heures (perte de connaissance, fractures [sauf celles des doigts de la main] ou un autre trouble nécessitant une hospitalisation d'une durée supérieure à un jour).
+Accident avec blessés légers
+On entend par 'accident avec blessés légers' les accidents où l'on ne trouve pas de victimes autres que légèrement blessées. Les 'blessés légers' sont les personnes légèrement atteintes, qui souffrent p. ex. de lésions superficielles de la peau sans saignement important ou qui voient leur mobilité légèrement entravée, sans être pour autant empêchées de quitter le lieu de l'accident; elles peuvent le cas échéant se faire soigner en traitement ambulatoire à l'hôpital ou chez le médecin.

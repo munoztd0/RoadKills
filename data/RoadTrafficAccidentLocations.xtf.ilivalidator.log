@@ -1,0 +1,43 @@
+Info: ilivalidator-1.13.1-6e495d6e073bc36f2480e81ba1cf55ea198c7855
+Info: ili2c-5.3.2-6fb5df2877070aeb16c7b39a206a61e2518682c8
+Info: iox-ili-1.21.16-6c1f35977bed36c97b3ddb8f590a3b13d4b3a85b
+Info: User <julia>
+Info: Start date 2023-03-01 14:42
+Info: maxMemory 7405568 KB
+Info: dataFile <P:\VUGIS_KAPUUN__Karten_fuer_Unfall\OLD__20230301\KAPUUN_VUGIS_export_FULLDATA_swisstopo+Rolf\RoadTrafficAccidentLocations.xtf>
+Info: pluginFolder <P:\Teaching\INTERLIS\INTERLIS_Tools\ilivalidator\ilivalidator-1.13.1\plugins>
+Info: modeldir <http://models.interlis.ch/>
+Info: httpProxyHost <pr01.adb.intra.admin.ch>
+Info: httpProxyPort <8080>
+Info: lookup model <AdministrativeUnits_V1> 2.3 in repository <http://models.interlis.ch/>
+Info: lookup model <AdministrativeUnits_V1> 2.3 in repository <http://models.geo.admin.ch/>
+Info: lookup model <GeometryCHLV03_V1> 2.3 in repository <http://models.interlis.ch/>
+Info: lookup model <GeometryCHLV03_V1> 2.3 in repository <http://models.geo.admin.ch/>
+Info: lookup model <RoadTrafficAccidentLocation_V2> 2.3 in repository <http://models.interlis.ch/>
+Info: lookup model <RoadTrafficAccidentLocation_V2> 2.3 in repository <http://models.geo.admin.ch/>
+Info: lookup model <InternationalCodes_V1> 2.3 in repository <http://models.interlis.ch/>
+Info: lookup model <InternationalCodes_V1> 2.3 in repository <http://models.geo.admin.ch/>
+Info: lookup model <CoordSys> 2.3 in repository <http://models.interlis.ch/>
+Info: lookup model <CatalogueObjects_V1> 2.3 in repository <http://models.interlis.ch/>
+Info: lookup model <CatalogueObjects_V1> 2.3 in repository <http://models.geo.admin.ch/>
+Info: lookup model <Units> 2.3 in repository <http://models.interlis.ch/>
+Info: ilifile <C:\Users\julia\.ilicache\models.geo.admin.ch\CH\CHBase_Part2_LOCALISATION_V1.ili>
+Info: ilifile <C:\Users\julia\.ilicache\models.geo.admin.ch\CH\CHBase_Part3_CATALOGUEOBJECTS_V1.ili>
+Info: ilifile <C:\Users\julia\.ilicache\models.interlis.ch\refhb23\CoordSys-20151124.ili>
+Info: ilifile <C:\Users\julia\.ilicache\models.interlis.ch\refhb23\Units-20120220.ili>
+Info: ilifile <C:\Users\julia\.ilicache\models.geo.admin.ch\CH\CHBase_Part4_ADMINISTRATIVEUNITS_V1.ili>
+Info: ilifile <C:\Users\julia\.ilicache\models.geo.admin.ch\CH\CHBase_Part1_GEOMETRY_V1.ili>
+Info: ilifile <C:\Users\julia\.ilicache\models.geo.admin.ch\ASTRA\RoadTrafficAccidentLocation_V2.ili>
+Info: validate data...
+Info: assume unknown external objects
+Info: first validation pass...
+Info: second validation pass...
+Info: validate reference attr RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentTypeRef.Reference...
+Info: validate reference attr RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentSeverityCategoryRef.Reference...
+Info: validate reference attr RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.RoadTypeRef.Reference...
+Info: validate reference attr RoadTrafficAccidentLocation_V2.RoadTrafficAccidentCatalogs.AccidentWeekDayRef.Reference...
+Info: object count 214049 (structured elements 856196)
+Info: P:\VUGIS_KAPUUN__Karten_fuer_Unfall\OLD__20230301\KAPUUN_VUGIS_export_FULLDATA_swisstopo+Rolf\RoadTrafficAccidentLocations.xtf: RoadTrafficAccidentLocation_V2.RoadTrafficAccident BID=2
+Info:  214049 objects in CLASS RoadTrafficAccidentLocation_V2.RoadTrafficAccident.RoadTrafficAccident
+Info: ...validation done
+Info: End date 2023-03-01 14:43 validation took 00h:01m:05s.0791ms
