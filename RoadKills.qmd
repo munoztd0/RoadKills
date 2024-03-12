@@ -27,7 +27,8 @@ options(
   )
 )
 
-#install https://github.com/uthink-git/pxR
+
+#remotes::install_github("munoztd0/pxR")
 library(pxR) 
 library(tidyverse)
 library(BFS)
@@ -36,7 +37,6 @@ library(plotly)
 
 
 ```
-
 
 ```{r}
 
@@ -65,6 +65,7 @@ RoadTrafficAccidentLocations <- read_csv("data/RoadTrafficAccidentLocations.csv"
         AccidentWeekDay_fr = col_skip(), 
         AccidentWeekDay_it = col_skip()), 
     na = "NA")
+
 library(rgdal)
 
 myConvert_LV95_to_WGS84 = function(df) {
@@ -89,8 +90,6 @@ RoadTrafficAccidentLocations |>
 RoadTrafficAccidentLocations_GPS <- readr::read_csv("data/RoadTrafficAccidentLocations_GPS.csv")
 
 
-
-
 df_chx_chy <- data.frame(chx=c(2500845, 675500), chy=c(1117371, 271500))
 
 test <- df_chx_chy
@@ -108,40 +107,111 @@ coords_LV95 = matrix(
 
 ```
 
-<!-- myConvert_LV95_to_WGS84(LV95) |>  -->
-<!--   as.data.frame() |>  -->
-<!--   ggplot(aes(x=E, y=N)) +  -->
-<!--   geom_point() +  -->
-<!--   coord_quickmap() +  -->
-<!--   theme_bw() +  -->
-<!--   labs(x="Longitude", y="Latitude") +  -->
-<!--   ggtitle("Road Traffic Accident Locations") +  -->
-<!--   theme(plot.title = element_text(hjust = 0.5)) +  -->
-<!--   theme(axis.text.x = element_text(angle = 90, hjust = 1)) +  -->
-<!--   theme(axis.text.y = element_text(angle = 0, hjust = 1)) +  -->
-<!--   theme(axis.title.x = element_text(size = 12)) +  -->
-<!--   theme(axis.title.y = element_text(size = 12)) +  -->
-<!--   theme(axis.text = element_text(size = 10)) +  -->
-<!--   theme(axis.title = element_text(size = 12)) +  -->
-<!--   theme(plot.title = element_text(size = 14)) +  -->
-<!--   theme(legend.title = element_text(size = 12)) +  -->
-<!--   theme(legend.text = element_text(size = 10)) +  -->
-<!--   theme(legend.position = "none") +  -->
-<!--   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) +  -->
-<!--   theme(panel.border = element_blank()) +  -->
-<!--   theme(panel.background = element_blank()) +  -->
-<!--   theme(plot.background = element_blank()) +  -->
-<!--   theme(plot.margin = unit(c(0.5, 0.5, 0.5, 0.5), "cm")) +  -->
-<!--   theme(legend.key = element_blank()) +  -->
-<!--   theme(legend.key.size = unit(0.5, "cm")) +  -->
-<!--   theme(legend.key.height = unit(0.5, "cm")) +  -->
-<!--   theme(legend.key.width = unit(0.5, "cm")) +  -->
-<!--   theme(legend.key.height = unit(0.5, "cm")) +  -->
-<!--   theme(legend.key.width = unit(0.5, "cm")) +  -->
-<!--   theme(legend.key.size = unit(0.5, "cm")) +  -->
-<!--   theme(legend.key.size = unit(0.5, "cm"))  -->
+```{r}
 
+library(leaflet)
+
+# Assuming RoadTrafficAccidentLocations_GPS is a data frame with columns 'lat' and 'long'
+data <- RoadTrafficAccidentLocations_GPS
+
+
+# Geneva coordinates
+geneva_lat <- 46.2044
+geneva_long <- 6.1432
+
+# Define a range (in degrees) around Geneva
+range <- 0.1
+
+# Filter the data
+filtered_data <- RoadTrafficAccidentLocations_GPS %>%
+  filter(between(lat, geneva_lat - range, geneva_lat + range) &
+         between(long, geneva_long - range, geneva_long + range))
+
+filtered_data |>
+  as.data.frame() |>
+  filter(AccidentYear == 2022) |>
+  leaflet() %>%
+  addTiles() %>%
+  addMarkers(~long, ~lat, label=~as.character(AccidentType))
+
+```
+
+
+```{r}
+
+RoadTrafficAccidentLocations_GPS |>
+
+  as.data.frame() |>
   
+  filter(AccidentYear == 2022) |>
+
+  ggplot(aes(x=long, y=lat)) +
+
+  geom_point() +
+
+  # coord_quickmap() +
+  
+    coord_quickmap(xlim = c(6.1432 - 0.1, 6.1432 + 0.1), ylim = c(46.2044 - 0.1, 46.2044 + 0.1)) +
+
+
+  theme_bw() +
+
+  labs(x="Longitude", y="Latitude") +
+
+  ggtitle("Road Traffic Accident Locations") +
+
+  theme(plot.title = element_text(hjust = 0.5)) +
+
+  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+
+  theme(axis.text.y = element_text(angle = 0, hjust = 1)) +
+
+  theme(axis.title.x = element_text(size = 12)) +
+
+  theme(axis.title.y = element_text(size = 12)) +
+
+  theme(axis.text = element_text(size = 10)) +
+
+  theme(axis.title = element_text(size = 12)) +
+
+  theme(plot.title = element_text(size = 14)) +
+
+  theme(legend.title = element_text(size = 12)) +
+
+  theme(legend.text = element_text(size = 10)) +
+
+  theme(legend.position = "none") +
+
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) +
+
+  theme(panel.border = element_blank()) +
+
+  theme(panel.background = element_blank()) +
+
+  theme(plot.background = element_blank()) +
+
+  theme(plot.margin = unit(c(0.5, 0.5, 0.5, 0.5), "cm")) +
+
+  theme(legend.key = element_blank()) +
+
+  theme(legend.key.size = unit(0.5, "cm")) +
+
+  theme(legend.key.height = unit(0.5, "cm")) +
+
+  theme(legend.key.width = unit(0.5, "cm")) +
+
+  theme(legend.key.height = unit(0.5, "cm")) +
+
+  theme(legend.key.width = unit(0.5, "cm")) +
+
+  theme(legend.key.size = unit(0.5, "cm")) +
+
+  theme(legend.key.size = unit(0.5, "cm"))
+
+
+```
+
+
 ```{r}
 #https://data.geo.admin.ch/api/stac/v0.9/collections/
 
@@ -149,9 +219,9 @@ coords_LV95 = matrix(
 #   number_bfs = "px-x-1106010100_104", #number_asset also possible
 #   destfile = "pers_accidents.px")
 
-
+# source("functions.R")
 data_accidents_pers_acc <- pxR::read.px(filename = "pers_accidents.px") |>
-  as.data.frame(language="fr") |> janitor::clean_names()
+  pxR::as.data.frame.px(language="fr") |> janitor::clean_names()
 
 
 
