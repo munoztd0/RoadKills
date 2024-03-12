@@ -1,0 +1,2 @@
+#remove html from language
+*.html linguist-vendored
