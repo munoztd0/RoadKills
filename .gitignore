@@ -1,3 +1,4 @@
 *.csv
 *.xtf
 *.json
+.Rproj.user
