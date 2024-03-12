@@ -1,2 +1,4 @@
 #remove html from language
 *.html linguist-vendored
+#remove js
+*.js linguist-vendored
