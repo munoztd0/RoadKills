@@ -1,4 +1,4 @@
-.csv
 *.xtf
 *.json
 .Rproj.user
+data/RoadTrafficAccidentLocations.csv 
