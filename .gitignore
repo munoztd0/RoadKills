@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
-.csv
->>>>>>> new
+point_noirs_files
 *.xtf
 *.json
 .Rproj.user
