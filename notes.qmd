@@ -1,0 +1,27 @@
+---
+title: "Notes"
+format: html
+editor: visual
+---
+
+# Notes
+
+Carte des points noir (avec dommage materiel) par cluster dernier 5 ans canton
+
+pieton \* juste pieton
+
+roller
+
+velo (velo + 25)
+
+velo lent
+
+velo (rapide)
+
+velo (tout)
+
+accident gravité \*tous
+
+Autoroutes: traffic induit
+
+checker amenagement avec Rob (chemin) -\> SITG

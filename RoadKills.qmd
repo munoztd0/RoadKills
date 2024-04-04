@@ -58,9 +58,12 @@ RoadTrafficAccidentLocations <- read_csv("data/RoadTrafficAccidentLocations.csv"
         AccidentSeverityCategory_fr = col_skip(), 
         AccidentSeverityCategory_it = col_skip(), 
         AccidentSeverityCategory_en = col_character(), 
-        RoadType_de = col_skip(), RoadType_fr = col_skip(), 
-        RoadType_it = col_skip(), AccidentMonth_de = col_skip(), 
-        AccidentMonth_fr = col_skip(), AccidentMonth_it = col_skip(), 
+        RoadType_de = col_skip(), 
+        RoadType_fr = col_skip(), 
+        RoadType_it = col_skip(), 
+        AccidentMonth_de = col_skip(), 
+        AccidentMonth_fr = col_skip(), 
+        AccidentMonth_it = col_skip(), 
         AccidentWeekDay_de = col_skip(), 
         AccidentWeekDay_fr = col_skip(), 
         AccidentWeekDay_it = col_skip()), 
@@ -130,83 +133,123 @@ filtered_data <- RoadTrafficAccidentLocations_GPS %>%
 filtered_data |>
   as.data.frame() |>
   filter(AccidentYear == 2022) |>
+  filter(AccidentInvolvingBicycle == TRUE) |>
   leaflet() %>%
   addTiles() %>%
-  addMarkers(~long, ~lat, label=~as.character(AccidentType))
+  addMarkers(~long, ~lat, label=~as.character(AccidentSeverityCategory_en))
 
 ```
 
+```{r}
+# library(ggplot2)
+# 
+# library(greenR)
+# library(dplyr)
+# 
+# data <- get_osm_data("geneva, switzerland")
+# high_areas_data <- data$highways
+# library(pxR) 
+# library(tidyverse)
+# library(BFS)
+# library(janitor)
+# library(plotly)
+# # Assuming your data points are in a data frame called `df_points` with columns `longitude` and `latitude`
+# df_points <- filtered_data |>
+#   as.data.frame() |>
+#   filter(AccidentYear == 2022) |>
+#   filter(AccidentInvolvingBicycle == TRUE)
+# 
+# # Convert your data points to an `sf` object
+# points_sf <- sf::st_as_sf(df_points, coords = c("long", "lat"), crs = 4326)
+# 
+# # Plot the highways and your data points
+# ggplot() +
+#   geom_sf(data = high_areas_data$osm_lines, color = "blue") +  # plot the highways
+#   geom_sf(data = points_sf, color = "red")  # plot your data points
+# 
+# 
+# library(ggmap)
+# 
+# # Get the map from Stamen Maps (OSM data) -
+# geneva_map <- get_stadiamap(bbox = c(left = 5.9, bottom = 46.1, right = 6.3, top = 46.3), 
+#                             zoom = 13, 
+#                             maptype = "stamen_terrain")
+# 
+# # Plot the map
+# ggmap(geneva_map)
+
+```
 
 ```{r}
 
-RoadTrafficAccidentLocations_GPS |>
-
-  as.data.frame() |>
-  
-  filter(AccidentYear == 2022) |>
-
-  ggplot(aes(x=long, y=lat)) +
-
-  geom_point() +
-
-  # coord_quickmap() +
-  
-    coord_quickmap(xlim = c(6.1432 - 0.1, 6.1432 + 0.1), ylim = c(46.2044 - 0.1, 46.2044 + 0.1)) +
-
-
-  theme_bw() +
-
-  labs(x="Longitude", y="Latitude") +
-
-  ggtitle("Road Traffic Accident Locations") +
-
-  theme(plot.title = element_text(hjust = 0.5)) +
-
-  theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
-
-  theme(axis.text.y = element_text(angle = 0, hjust = 1)) +
-
-  theme(axis.title.x = element_text(size = 12)) +
-
-  theme(axis.title.y = element_text(size = 12)) +
-
-  theme(axis.text = element_text(size = 10)) +
-
-  theme(axis.title = element_text(size = 12)) +
-
-  theme(plot.title = element_text(size = 14)) +
-
-  theme(legend.title = element_text(size = 12)) +
-
-  theme(legend.text = element_text(size = 10)) +
-
-  theme(legend.position = "none") +
-
-  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) +
-
-  theme(panel.border = element_blank()) +
-
-  theme(panel.background = element_blank()) +
-
-  theme(plot.background = element_blank()) +
-
-  theme(plot.margin = unit(c(0.5, 0.5, 0.5, 0.5), "cm")) +
-
-  theme(legend.key = element_blank()) +
-
-  theme(legend.key.size = unit(0.5, "cm")) +
-
-  theme(legend.key.height = unit(0.5, "cm")) +
-
-  theme(legend.key.width = unit(0.5, "cm")) +
-
-  theme(legend.key.height = unit(0.5, "cm")) +
-
-  theme(legend.key.width = unit(0.5, "cm")) +
-
-  theme(legend.key.size = unit(0.5, "cm")) +
-
-  theme(legend.key.size = unit(0.5, "cm"))
+# RoadTrafficAccidentLocations_GPS |>
+# 
+#   as.data.frame() |>
+#   
+#   filter(AccidentYear == 2022) |>
+# 
+#   ggplot(aes(x=long, y=lat)) +
+# 
+#   geom_point() +
+# 
+#   # coord_quickmap() +
+#   
+#     coord_quickmap(xlim = c(6.1432 - 0.1, 6.1432 + 0.1), ylim = c(46.2044 - 0.1, 46.2044 + 0.1)) +
+# 
+# 
+#   theme_bw() +
+# 
+#   labs(x="Longitude", y="Latitude") +
+# 
+#   ggtitle("Road Traffic Accident Locations") +
+# 
+#   theme(plot.title = element_text(hjust = 0.5)) +
+# 
+#   theme(axis.text.x = element_text(angle = 90, hjust = 1)) +
+# 
+#   theme(axis.text.y = element_text(angle = 0, hjust = 1)) +
+# 
+#   theme(axis.title.x = element_text(size = 12)) +
+# 
+#   theme(axis.title.y = element_text(size = 12)) +
+# 
+#   theme(axis.text = element_text(size = 10)) +
+# 
+#   theme(axis.title = element_text(size = 12)) +
+# 
+#   theme(plot.title = element_text(size = 14)) +
+# 
+#   theme(legend.title = element_text(size = 12)) +
+# 
+#   theme(legend.text = element_text(size = 10)) +
+# 
+#   theme(legend.position = "none") +
+# 
+#   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) +
+# 
+#   theme(panel.border = element_blank()) +
+# 
+#   theme(panel.background = element_blank()) +
+# 
+#   theme(plot.background = element_blank()) +
+# 
+#   theme(plot.margin = unit(c(0.5, 0.5, 0.5, 0.5), "cm")) +
+# 
+#   theme(legend.key = element_blank()) +
+# 
+#   theme(legend.key.size = unit(0.5, "cm")) +
+# 
+#   theme(legend.key.height = unit(0.5, "cm")) +
+# 
+#   theme(legend.key.width = unit(0.5, "cm")) +
+# 
+#   theme(legend.key.height = unit(0.5, "cm")) +
+# 
+#   theme(legend.key.width = unit(0.5, "cm")) +
+# 
+#   theme(legend.key.size = unit(0.5, "cm")) +
+# 
+#   theme(legend.key.size = unit(0.5, "cm"))
 
 
 ```
@@ -221,10 +264,10 @@ RoadTrafficAccidentLocations_GPS |>
 
 # source("functions.R")
 data_accidents_pers_acc <- pxR::read.px(filename = "pers_accidents.px") |>
-  pxR::as.data.frame.px(language="fr") |> janitor::clean_names()
+  as.data.frame(language="fr") |> janitor::clean_names()
 
 
-
+data_accidents_pers_acc
 pers_accidents_clean <-
     data_accidents_pers_acc |>
   #create new column that gathers cycle, Vélo électrique rapide and Vélo électrique lent into velo
