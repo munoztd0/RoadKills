@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> new
 ---
 title: "RoadKills"
 author: "David Munoz Tord"
@@ -11,6 +15,31 @@ editor_options:
   chunk_output_type: console
 ---
 
+<<<<<<< HEAD
+=======
+
+## Notes
+Carte des points noir (avec dommage materiel) par cluster dernier 5 ans canton
+
+pieton \* juste pieton
+
+roller
+
+velo (velo + 25)
+
+velo lent
+
+velo (rapide)
+
+velo (tout)
+
+accident gravité \*tous
+
+Autoroutes: traffic induit
+
+checker amenagement avec Rob (chemin) -\> SITG
+
+>>>>>>> new
 ## Intro
 
 ```{r}
@@ -48,7 +77,13 @@ library(leaflet)
 # the data is downloaded from the SITG website
 #https://ge.ch/sitg/geodata/SITG/OPENDATA/8139/CSV_OTC_ACCIDENTS.zip
 
+<<<<<<< HEAD
 OTC_ACCIDENTS <- read_delim("data/CSV_OTC_ACCIDENTS/OTC_ACCIDENTS.csv",  escape_double = FALSE,  trim_ws = TRUE)
+=======
+OTC_ACCIDENTS <- read_delim("data/CSV_OTC_ACCIDENTS/OTC_ACCIDENTS.csv", 
+    delim = ";", escape_double = FALSE, trim_ws = TRUE) |>
+  janitor::clean_names()
+>>>>>>> new
 
 #change date format
 # from double like 20100616 to date
@@ -57,8 +92,11 @@ OTC_ACCIDENTS <- OTC_ACCIDENTS |>
   mutate(date = as.Date(as.character(date), format = "%Y%m%d"))
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> new
 # Now we project the coordinates to WGS84
 
 myConvert_LV95_to_WGS84 = function(df) {
@@ -75,9 +113,12 @@ OTC_ACCIDENTS_GPS <- OTC_ACCIDENTS |>
   write_csv("data/CSV_OTC_ACCIDENTS/OTC_ACCIDENTS_GPS.csv")
 
 
+<<<<<<< HEAD
 #massage data
 OTC_ACCIDENTS_GPS <- 
 
+=======
+>>>>>>> new
 ```
 
 ```{r}
@@ -244,4 +285,8 @@ plotly_p <- plotly_p %>%
 plotly_p 
 
 
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> new
