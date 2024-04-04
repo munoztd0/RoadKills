@@ -5,12 +5,10 @@
 
 #css
 *.css linguist-vendored
-
 #json
 *.json linguist-vendored
-
 #scss   
 *.scss linguist-vendored
-
 #xml
 *.xml linguist-vendored
+*.csv filter=lfs diff=lfs merge=lfs -text
