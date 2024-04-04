@@ -71,15 +71,15 @@ library(leaflet)
 # the data is downloaded from the SITG website
 #https://ge.ch/sitg/geodata/SITG/OPENDATA/8139/CSV_OTC_ACCIDENTS.zip
 
-OTC_ACCIDENTS <- read_delim("data/CSV_OTC_ACCIDENTS/OTC_ACCIDENTS.csv",  escape_double = FALSE,  trim_ws = TRUE)
+OTC_ACCIDENTS <- read_delim("data/CSV_OTC_ACCIDENTS/OTC_ACCIDENTS.csv", 
+    delim = ";", escape_double = FALSE, trim_ws = TRUE) |>
+  janitor::clean_names()
 
 #change date format
 # from double like 20100616 to date
 
 OTC_ACCIDENTS <- OTC_ACCIDENTS |>
   mutate(date = as.Date(as.character(date), format = "%Y%m%d"))
-
-
 
 
 # Now we project the coordinates to WGS84
@@ -97,9 +97,6 @@ OTC_ACCIDENTS_GPS <- OTC_ACCIDENTS |>
   bind_cols(OTC_ACCIDENTS) |> 
   write_csv("data/CSV_OTC_ACCIDENTS/OTC_ACCIDENTS_GPS.csv")
 
-
-#massage data
-OTC_ACCIDENTS_GPS <- 
 
 ```
 
