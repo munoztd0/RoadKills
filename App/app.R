@@ -7,7 +7,6 @@ library(shinydashboard)
 
 options(warn = -1)
 
-
 #define ui 
 ui <- dashboardPage(
   dashboardHeader(title = "Accidents Genève"),
@@ -33,10 +32,15 @@ ui <- dashboardPage(
     
     # Add map
     fluidRow(
-      column(12,
-             leafletOutput("map", height = 600)  # adjust the height as needed
+      column(12, style = "margin-top: 20px;",
+             leafletOutput("map", height = 600),  # adjust the height as needed
+             uiOutput("legend"),
+             
+             
       )
     ),
+    
+
     
     tags$hr(),  # Add horizontal line
     
@@ -46,11 +50,20 @@ ui <- dashboardPage(
       ) ,
       column(4,
              downloadButton("downloadData", "Download Filtered Data")
-      ),
-      column(4,
-             tags$p("To download the map, just take a screenshot.")
+      )#,
+      # column(4,
+      #        tags$p("To download the map, just take a screenshot.")
+      # )
+    ),
+    tags$hr(),  
+    # Add plain text output below the map
+    fluidRow(
+      column(12,
+             htmlOutput("text")
       )
-    )
+    ),
+    tags$hr(),  
+    tags$hr()
   )
 )
 
@@ -68,7 +81,8 @@ server <- function(input, output, session) {
     if (!is.null(input$filter_variable)) {
       var_choices <- unique(data()[[input$filter_variable]])
       if (!is.null(var_choices)) {
-        selectizeInput("categories", "Select Categories", choices = var_choices, selected = var_choices, multiple = TRUE)
+        div(style = "max-height: 150px; overflow-y: auto;",
+            selectizeInput("categories", "Select Categories", choices = var_choices, selected = var_choices, multiple = TRUE))
       }
     }
   })
@@ -142,6 +156,41 @@ server <- function(input, output, session) {
     }
   )
   
+  output$text <- renderUI({
+    HTML("
+    Explanation of Variables<br/>
+    velo: Number of accidents involving non-motorized bicycles.<br/>
+    velo_lent: Number of accidents involving slow-moving bicycles (bicycles with a speed limit of 25 km/h + non-motorized bicycles).<br/>
+    velo_25: Number of accidents involving bicycles with a speed limit of 25 km/h.<br/>
+    velo_45: Number of accidents involving bicycles with a speed limit of 45 km/h.<br/>
+    velo_elec: Number of accidents involving electric motor bicycles.<br/>
+    velo_tous: Total number of accidents involving all types of bicycles.<br/>
+    pietons: Number of accidents involving pedestrians.<br/>
+    nb_enfants_impliques: Number of accidents involving children.<br/>
+    nb_enfants_ecole: Number of accidents involving school children.<br/>
+    nb_blesses_legers: Number of accidents resulting in minor injuries.<br/>
+    nb_blesses_graves: Number of accidents resulting in serious injuries.<br/>
+    nb_tues: Number of fatal accidents.<br/>
+    total_personnes: Total number of individuals involved in accident.<br/>
+  ")
+  })
+  
+
+  # Add legend
+  output$legend <- renderUI({
+    legend <- tags$div(
+      style = "position: absolute; top: 30px; right: 2em; z-index: 1000; background-color: white; padding: 5px; border: 1px solid #ccc;",
+      tags$h4("Legend"),
+      tags$p("Size represents"),
+      tags$p("the number of accidents:"),
+      tags$p("1 accident: "),
+      tags$div(style = "display: inline-block; width: 20px; height: 20px; background-color: grey; border: 1px solid black; border-radius: 50%;"),
+      tags$p("5 accidents: "),
+      tags$div(style = "display: inline-block; width: 30px; height: 30px; background-color: grey; border: 1px solid black; border-radius: 50%;"),
+      
+    )
+    return(legend)
+  })
 }
 
 # Run the app
